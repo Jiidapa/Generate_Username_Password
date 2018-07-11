@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="testapiModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tokenmanagment">
+    <Key>
+      <PropertyRef Name="id_token" />
+    </Key>
+    <Property Name="id_token" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="access_token" Type="String" MaxLength="16777215" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="expire_token" Type="Int32" Nullable="false" />
+    <Property Name="refresh_token" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="status_token" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="testapiEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tokenmanagment" EntityType="Self.tokenmanagment" />
+  </EntityContainer>
+</Schema>

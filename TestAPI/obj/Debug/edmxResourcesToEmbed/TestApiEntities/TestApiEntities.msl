@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="testapiModelStoreContainer" CdmEntityContainer="testapiEntities">
+    <EntitySetMapping Name="tokenmanagment">
+      <EntityTypeMapping TypeName="testapiModel.tokenmanagment">
+        <MappingFragment StoreEntitySet="tokenmanagment">
+          <ScalarProperty Name="id_token" ColumnName="id_token" />
+          <ScalarProperty Name="access_token" ColumnName="access_token" />
+          <ScalarProperty Name="expire_token" ColumnName="expire_token" />
+          <ScalarProperty Name="refresh_token" ColumnName="refresh_token" />
+          <ScalarProperty Name="status_token" ColumnName="status_token" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
